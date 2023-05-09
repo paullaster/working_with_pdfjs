@@ -16,6 +16,7 @@ loadingTask.promise.then( (pdf) => {
         let viewport = page.getViewport({scale});
 
         // Preparing canvas usign pdfjs dimentions
-        
+        let canva = document.getElementById("pdf-canva");
+        let context = canva.getContext("2d");
     })
 })
