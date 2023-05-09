@@ -10,5 +10,12 @@ loadingTask.promise.then( (pdf) => {
     
     // Fetch the first page of pdf
     let pageNumber = 1;
-    
+    pdf.getPage(pageNumber).then( (page) => {
+        console.log("Page loaded successfully");
+        let scale = 2;
+        let viewport = page.getViewport({scale});
+
+        // Preparing canvas usign pdfjs dimentions
+        
+    })
 })
