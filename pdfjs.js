@@ -1,0 +1,3 @@
+const initPDF = () => {
+  pdfjsLib.getDocument()
+};
